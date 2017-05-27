@@ -22,7 +22,7 @@ def soundex(word):
     # replace letters in word with digits
     for letter in word[1:]:
         for i in range(0, 7):
-            if letter in S_LIST[i]:
+            if letter in S_GROUP[i]:
                 digits += str(i)
 
     # remove double characters and vowels

@@ -34,7 +34,6 @@ def correct(word):
         # return up to ten words in the list
         return [(i[1]) for i in tlist[:10]]
 
-
 # MAIN PROGRAM
 
 try:

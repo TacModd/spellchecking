@@ -58,7 +58,7 @@ def correct_file():
                         variable = input("Do you wish to permanently remember this word? (y to accept/enter to ignore): ")
                         if variable == 'y' or variable == 'Y':
                             soundex_code = soundex(word)
-                            enter(soundex_code, word)
+                            update_dict(soundex_code, word)
                         pass
                     
                     # otherwise replace word with user input
@@ -151,7 +151,7 @@ def correct(word):
         return "Word appears correctly spelled!"
     else:
         # return up to ten words in the list
-return [(i[1]) for i in tlist[:10]]
+        return [(i[1]) for i in tlist[:10]]
 
 
 
